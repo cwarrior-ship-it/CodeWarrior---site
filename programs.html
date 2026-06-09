@@ -14,7 +14,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="programs.html">Tracks & Ranks</a>
+        <a href="programs.html" class="active">Tracks & Ranks</a>
         <a href="choose.html">How to Choose</a>
         <a href="pricing.html">Pricing & Schedule</a>
         <a href="community.html">Community</a>
@@ -25,7 +25,8 @@
         <p>Explore our progressive curriculum designed to take students from foundational logic to production-ready software development.</p>
 
         <div class="program-grid">
-            <div class="card">
+            <!-- ID ADDED HERE FOR BEGINNERS -->
+            <div class="card" id="beginner">
                 <img src="Squire.jpg" alt="Squire Rank">
                 <h3>Squire Track</h3>
                 <p><strong>Level:</strong> Elementary School<br>Foundations of logic, sequencing, and problem-solving through drag-and-drop Block Coding (Scratch).</p>
@@ -37,22 +38,24 @@
                 <p><strong>Level:</strong> Early Middle School<br>Transitioning from blocks to syntax. Introduction to web structural basics and game design logic.</p>
             </div>
 
-            <div class="card">
+            <!-- ID ADDED HERE FOR INTERMEDIATE -->
+            <div class="card" id="intermediate">
                 <img src="Vanguard.jpg" alt="Vanguard Rank">
                 <h3>Vanguard Track</h3>
                 <p><strong>Level:</strong> Middle School<br>Diving deep into Python. Students learn automation, data structures, and algorithmic fundamentals.</p>
             </div>
 
-            <div class="card">
+            <!-- ID ADDED HERE FOR ADVANCED -->
+            <div class="card" id="advanced">
                 <img src="paladin.jpg" alt="Paladin Rank">
                 <h3>Paladin Track</h3>
-                <p><strong>Level:</strong> Early High School<br>Mastering Python and/or modern JavaScript. Developing interactive web applications and handling dynamic system events.</p>
+                <p><strong>Level:</strong> Early High School<br>Mastering modern JavaScript. Developing interactive web applications and handling dynamic system events.</p>
             </div>
 
             <div class="card">
                 <img src="centurian.jpg" alt="Centurian Rank">
                 <h3>Centurian Track</h3>
-                <p><strong>Level:</strong> Advanced High School<br>Rigorous certification track for Python, JavaScript and C++. Prepares core developers for AP Computer Science and real-world software architecture.</p>
+                <p><strong>Level:</strong> Advanced High School<br>An advanced, college-prep curriculum focusing on object-oriented programming in C++ to master complex software architecture and data structures.</p>
             </div>
         </div>
     </main>
