@@ -72,9 +72,9 @@ h2 {
 }
 
 .hero-image {
-    width: 100%;        /* Forces it to neatly fill the 500px container box */
-    max-height: 400px;  /* Puts a hard ceiling on how tall the image can scale */
-    object-fit: cover;  /* Crops cleanly without squeezing or stretching the artwork */
+    width: 100%;        /* Allows the image to span the full width of its 500px box */
+    height: auto;       /* CRITICAL: Tells the browser to calculate height naturally */
+    object-fit: contain;/* Ensures the entire image fits inside without being cropped */
     border-radius: 8px;
     border: 1px solid #30363d;
     box-shadow: 0 4px 20px rgba(46, 164, 79, 0.25);
