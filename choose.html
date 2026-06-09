@@ -12,37 +12,52 @@
         <p class="tagline">Finding the perfect arena for your child's skill level.</p>
     </header>
 
-    <main>
-        <h2>Assess Your Child's Starting Point</h2>
-        <p>We break down our curriculum into ranks so students never feel overwhelmed, yet stay constantly challenged. Here is how to pick:</p>
-        
-        <div class="program-grid">
-            <div class="card">
-                <h3>New to Coding?</h3>
-                <p>If your student is in Elementary or early Middle School and has never written a script, they should start as a <strong>Squire</strong> or <strong>Scout</strong>. They will learn logic patterns visually before wrestling with typing complex syntax.</p>
-            </div>
-            <div class="card">
-                <h3>Has Basic Experience?</h3>
-                <p>If your child has played with Scratch or built fundamental mods, they are ready for the text-based syntax rules of our <strong>Vanguard Track</strong> using Python.</p>
-            </div>
-            <div class="card">
-                <h3>High School & AP Prep?</h3>
-                <p>Older or advanced tech students leveling up for college computer science engineering belong in the advanced <strong>Paladin</strong> or <strong>Centurian Tracks</strong> studying JavaScript and deep object-oriented C++ software patterns.</p>
-            </div>
-        </div>
-    </main>
-    
-    <footer>
-        <img src="footerimage.jpg" alt="CodeWarrior Footer Brand" class="footer-img">
-        <p>&copy; 2026 CodeWarrior, LLC. All rights reserved.</p>
-    </footer>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="programs.html">Tracks & Ranks</a>
-        <a href="choose.html">How to Choose</a>
+        <a href="choose.html" class="active">How to Choose</a>
         <a href="pricing.html">Pricing & Schedule</a>
         <a href="community.html">Community</a>
     </nav>
+
+    <main>
+        <h2>Assess Your Child's Starting Point</h2>
+        <p>Click on the profile below that best matches your student to explore their path:</p>
+        
+        <div class="program-grid">
+            <!-- CHOICE 1: CLICKABLE SQUIRE/SCOUT -->
+            <a href="programs.html" class="card-link" style="text-decoration: none; color: inherit;">
+                <div class="card" style="cursor: pointer;">
+                    <h3>New to Coding?</h3>
+                    <p>If your student is in Elementary or early Middle School and has never written a script, they should start here. They will learn logic patterns visually.</p>
+                    <span class="btn-action" style="color: #2ea44f; font-weight: bold; display: block; margin-top: 10px;">View Beginner Tracks &rarr;</span>
+                </div>
+            </a>
+
+            <!-- CHOICE 2: CLICKABLE VANGUARD -->
+            <a href="programs.html" class="card-link" style="text-decoration: none; color: inherit;">
+                <div class="card" style="cursor: pointer;">
+                    <h3>Has Basic Experience?</h3>
+                    <p>If your child has played with Scratch or built fundamental game mods, they are ready for text-based syntax rules using Python.</p>
+                    <span class="btn-action" style="color: #2ea44f; font-weight: bold; display: block; margin-top: 10px;">View Intermediate Tracks &rarr;</span>
+                </div>
+            </a>
+
+            <!-- CHOICE 3: CLICKABLE PALADIN/CENTURION -->
+            <a href="programs.html" class="card-link" style="text-decoration: none; color: inherit;">
+                <div class="card" style="cursor: pointer;">
+                    <h3>High School & AP Prep?</h3>
+                    <p>Older or advanced tech students leveling up for college computer science engineering belong in our advanced tracks studying JavaScript and C++.</p>
+                    <span class="btn-action" style="color: #2ea44f; font-weight: bold; display: block; margin-top: 10px;">View Advanced Tracks &rarr;</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <img src="footerimage.jpg" alt="CodeWarrior Footer Brand" class="footer-img">
+        <p>&copy; 2026 CodeWarrior, LLC. All rights reserved.</p>
+    </footer>
 </body>
 </html>
