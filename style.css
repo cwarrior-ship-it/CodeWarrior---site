@@ -11,14 +11,17 @@ body {
 header {
     background-color: #161b22;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem; /* Added slightly more breathing room */
     border-bottom: 2px solid #238636;
 }
 
-header h1 {
-    color: #2ea44f;
-    margin: 0.5rem 0 0 0;
-    font-size: 2.5rem;
+/* This targets your top logo image icon */
+header img {
+    width: 220px;       /* Made your logo significantly larger */
+    height: auto;       /* Keeps the logo perfectly proportioned */
+    display: block;
+    margin: 0 auto 15px auto; /* Centers it perfectly above the title */
+    transition: transform 0.3s ease;
 }
 
 .tagline {
@@ -64,16 +67,18 @@ h2 {
 /* Hero Elements */
 .hero-container {
     text-align: center;
-    margin-top: 2rem;
+    margin: 2.5rem auto;
+    max-width: 500px;   /* Constrains the warrior image so it doesn't blow up too large */
 }
 
 .hero-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%;        /* Forces it to neatly fill the 500px container box */
+    max-height: 400px;  /* Puts a hard ceiling on how tall the image can scale */
+    object-fit: cover;  /* Crops cleanly without squeezing or stretching the artwork */
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(46, 164, 79, 0.2);
+    border: 1px solid #30363d;
+    box-shadow: 0 4px 20px rgba(46, 164, 79, 0.25);
 }
-
 /* Program Card Structures */
 .program-grid {
     display: grid;
